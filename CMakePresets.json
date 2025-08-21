@@ -1,0 +1,46 @@
+{
+  "version": 8,
+  "configurePresets": [
+    {
+      "name": "default-debug",
+      "displayName": "Clang Debug",
+      "description": "Debug build using Clang",
+      "binaryDir": "${sourceDir}/out/build/${presetName}",
+      "cacheVariables": {
+        "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
+        "CMAKE_C_COMPILER": "/usr/sbin/clang",
+        "CMAKE_CXX_COMPILER": "/usr/sbin/clang++",
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    },
+    {
+      "name": "default-release",
+      "displayName": "Clang Release",
+      "description": "Release build using Clang with optimizations",
+      "inherits": "default-debug",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "build-debug",
+      "configurePreset": "default-debug"
+    },
+    {
+      "name": "build-release",
+      "configurePreset": "default-release"
+    }
+  ],
+  "testPresets": [
+    {
+      "name": "test-debug",
+      "configurePreset": "default-debug"
+    },
+    {
+      "name": "test-release",
+      "configurePreset": "default-release"
+    }
+  ]
+}
