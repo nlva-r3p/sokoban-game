@@ -9,7 +9,7 @@
 #include <fstream>
 #include <SFML/Graphics.hpp>
 #include <SFML/Audio.hpp>
-#include "Sokoban.hpp"
+#include "sokoban/Sokoban.hpp"
 
 #define DELAY 5.0f
 
@@ -52,8 +52,8 @@ int main(int argc, char* argv[]) {
 
     // set up font
     sf::Font font;
-    if (!font.loadFromFile("./sokoban/Fonts/3270NerdFontRegular.ttf")) {
-        if (!font.loadFromFile("./3270NerdFontRegular.ttf")) {
+    if (!font.loadFromFile("assets/sokoban/Fonts/3270NerdFontRegular.ttf")) {
+        if (!font.loadFromFile("3270NerdFontRegular.ttf")) {
             throw std::runtime_error("Failed to load font");
         }
     }
@@ -87,8 +87,8 @@ int main(int argc, char* argv[]) {
 
     // set up win sound
     sf::SoundBuffer winSoundBuffer;
-    if (!winSoundBuffer.loadFromFile("./2001.wav")) {
-        if (!winSoundBuffer.loadFromFile("./sokoban/Sounds/2001.wav")) {
+    if (!winSoundBuffer.loadFromFile("win.mp3")) {
+        if (!winSoundBuffer.loadFromFile("assets/sokoban/Sounds/win.mp3")) {
             throw std::runtime_error("Failed to load win sound");
         }
     }
@@ -136,9 +136,9 @@ int main(int argc, char* argv[]) {
     };
 
     std::vector<std::string> levels = {
-        "./sokoban/Levels/level1.lvl", "./sokoban/Levels/level2.lvl",
-        "./sokoban/Levels/level3.lvl", "./sokoban/Levels/level4.lvl",
-        "./sokoban/Levels/level5.lvl", "./sokoban/Levels/level6.lvl"
+        "assets/sokoban/Levels/level1.lvl", "assets/sokoban/Levels/level2.lvl",
+        "assets/sokoban/Levels/level3.lvl", "assets/sokoban/Levels/level4.lvl",
+        "assets/sokoban/Levels/level5.lvl", "assets/sokoban/Levels/level6.lvl"
     };
 
     unsigned int level = 0;

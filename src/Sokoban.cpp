@@ -2,7 +2,7 @@
 // By Nguyen Mai
 
 #include <fstream>  // for ifs
-#include "Sokoban.hpp"
+#include "sokoban/Sokoban.hpp"
 
 namespace SB {
 std::vector<sf::Vector2u> Sokoban::_storagePositions;
