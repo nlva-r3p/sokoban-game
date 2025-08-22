@@ -16,7 +16,7 @@
 
 #include <SFML/Graphics.hpp>
 
-namespace SB {
+namespace SB { 
 enum class Direction {
     Up, Down, Left, Right
 };
@@ -84,99 +84,99 @@ class TileClassifier {
 
 
       // ANIMATIONS
-      classifyAnimation(Direction::Down, "./sokoban/Player/player_05.png");
-      classifyAnimation(Direction::Down, "./sokoban/Player/player_06.png");
-      classifyAnimation(Direction::Down, "./sokoban/Player/player_07.png");
-      classifyAnimation(Direction::Up, "./sokoban/Player/player_08.png");
-      classifyAnimation(Direction::Up, "./sokoban/Player/player_09.png");
-      classifyAnimation(Direction::Up, "./sokoban/Player/player_10.png");
-      classifyAnimation(Direction::Right, "./sokoban/Player/player_17.png");
-      classifyAnimation(Direction::Right, "./sokoban/Player/player_18.png");
-      classifyAnimation(Direction::Right, "./sokoban/Player/player_19.png");
-      classifyAnimation(Direction::Left, "./sokoban/Player/player_20.png");
-      classifyAnimation(Direction::Left, "./sokoban/Player/player_21.png");
-      classifyAnimation(Direction::Left, "./sokoban/Player/player_22.png");
+      classifyAnimation(Direction::Down, "assets/sokoban/Player/player_05.png");
+      classifyAnimation(Direction::Down, "assets/sokoban/Player/player_06.png");
+      classifyAnimation(Direction::Down, "assets/sokoban/Player/player_07.png");
+      classifyAnimation(Direction::Up, "assets/sokoban/Player/player_08.png");
+      classifyAnimation(Direction::Up, "assets/sokoban/Player/player_09.png");
+      classifyAnimation(Direction::Up, "assets/sokoban/Player/player_10.png");
+      classifyAnimation(Direction::Right, "assets/sokoban/Player/player_17.png");
+      classifyAnimation(Direction::Right, "assets/sokoban/Player/player_18.png");
+      classifyAnimation(Direction::Right, "assets/sokoban/Player/player_19.png");
+      classifyAnimation(Direction::Left, "assets/sokoban/Player/player_20.png");
+      classifyAnimation(Direction::Left, "assets/sokoban/Player/player_21.png");
+      classifyAnimation(Direction::Left, "assets/sokoban/Player/player_22.png");
 
       // HOLE CRATES
-      classifyTexture(TileType::HOLE_CRATES, "./sokoban/Crates/crate_01.png");
-      classifyTexture(TileType::HOLE_CRATES, "./sokoban/Crates/crate_42.png");
-      classifyTexture(TileType::HOLE_CRATES, "./sokoban/Crates/crate_43.png");
-      classifyTexture(TileType::HOLE_CRATES, "./sokoban/Crates/crate_44.png");
-      classifyTexture(TileType::HOLE_CRATES, "./sokoban/Crates/crate_45.png");
+      classifyTexture(TileType::HOLE_CRATES, "assets/sokoban/Crates/crate_01.png");
+      classifyTexture(TileType::HOLE_CRATES, "assets/sokoban/Crates/crate_42.png");
+      classifyTexture(TileType::HOLE_CRATES, "assets/sokoban/Crates/crate_43.png");
+      classifyTexture(TileType::HOLE_CRATES, "assets/sokoban/Crates/crate_44.png");
+      classifyTexture(TileType::HOLE_CRATES, "assets/sokoban/Crates/crate_45.png");
       // HOLE CRATES BRICK-TEXTURE
-      classifyTexture(TileType::WALLS, "./sokoban/Blocks/block_04.png");
-      classifyTexture(TileType::WALLS, "./sokoban/Blocks/block_05.png");
-      classifyTexture(TileType::WALLS, "./sokoban/Blocks/block_06.png");
-      classifyTexture(TileType::WALLS, "./sokoban/Blocks/block_07.png");
+      classifyTexture(TileType::WALLS, "assets/sokoban/Blocks/block_04.png");
+      classifyTexture(TileType::WALLS, "assets/sokoban/Blocks/block_05.png");
+      classifyTexture(TileType::WALLS, "assets/sokoban/Blocks/block_06.png");
+      classifyTexture(TileType::WALLS, "assets/sokoban/Blocks/block_07.png");
 
       // CRATES
-      classifyTexture(TileType::CRATES, "./sokoban/Crates/crate_02.png");
-      classifyTexture(TileType::CRATES, "./sokoban/Crates/crate_03.png");
-      classifyTexture(TileType::CRATES, "./sokoban/Crates/crate_04.png");
-      classifyTexture(TileType::CRATES, "./sokoban/Crates/crate_05.png");
-      classifyTexture(TileType::CRATES, "./sokoban/Crates/crate_06.png");
+      classifyTexture(TileType::CRATES, "assets/sokoban/Crates/crate_02.png");
+      classifyTexture(TileType::CRATES, "assets/sokoban/Crates/crate_03.png");
+      classifyTexture(TileType::CRATES, "assets/sokoban/Crates/crate_04.png");
+      classifyTexture(TileType::CRATES, "assets/sokoban/Crates/crate_05.png");
+      classifyTexture(TileType::CRATES, "assets/sokoban/Crates/crate_06.png");
       // CRATES BRICK-TEXTURE
-      classifyTexture(TileType::CRATES, "./sokoban/Blocks/block_01.png");
-      classifyTexture(TileType::CRATES, "./sokoban/Blocks/block_02.png");
-      classifyTexture(TileType::CRATES, "./sokoban/Blocks/block_03.png");
-      classifyTexture(TileType::CRATES, "./sokoban/Blocks/block_08.png");
+      classifyTexture(TileType::CRATES, "assets/sokoban/Blocks/block_01.png");
+      classifyTexture(TileType::CRATES, "assets/sokoban/Blocks/block_02.png");
+      classifyTexture(TileType::CRATES, "assets/sokoban/Blocks/block_03.png");
+      classifyTexture(TileType::CRATES, "assets/sokoban/Blocks/block_08.png");
 
       // DIM HOLE CRATES
-      classifyTexture(TileType::DIM_HOLE_CRATES, "./sokoban/Crates/crate_07.png");
-      classifyTexture(TileType::DIM_HOLE_CRATES, "./sokoban/Crates/crate_08.png");
-      classifyTexture(TileType::DIM_HOLE_CRATES, "./sokoban/Crates/crate_09.png");
-      classifyTexture(TileType::DIM_HOLE_CRATES, "./sokoban/Crates/crate_10.png");
-      classifyTexture(TileType::DIM_HOLE_CRATES, "./sokoban/Crates/crate_11.png");
+      classifyTexture(TileType::DIM_HOLE_CRATES, "assets/sokoban/Crates/crate_07.png");
+      classifyTexture(TileType::DIM_HOLE_CRATES, "assets/sokoban/Crates/crate_08.png");
+      classifyTexture(TileType::DIM_HOLE_CRATES, "assets/sokoban/Crates/crate_09.png");
+      classifyTexture(TileType::DIM_HOLE_CRATES, "assets/sokoban/Crates/crate_10.png");
+      classifyTexture(TileType::DIM_HOLE_CRATES, "assets/sokoban/Crates/crate_11.png");
 
       // DIM CRATES
-      classifyTexture(TileType::DIM_CRATES, "./sokoban/Crates/crate_12.png");
-      classifyTexture(TileType::DIM_CRATES, "./sokoban/Crates/crate_13.png");
-      classifyTexture(TileType::DIM_CRATES, "./sokoban/Crates/crate_14.png");
-      classifyTexture(TileType::DIM_CRATES, "./sokoban/Crates/crate_15.png");
-      classifyTexture(TileType::DIM_CRATES, "./sokoban/Crates/crate_16.png");
+      classifyTexture(TileType::DIM_CRATES, "assets/sokoban/Crates/crate_12.png");
+      classifyTexture(TileType::DIM_CRATES, "assets/sokoban/Crates/crate_13.png");
+      classifyTexture(TileType::DIM_CRATES, "assets/sokoban/Crates/crate_14.png");
+      classifyTexture(TileType::DIM_CRATES, "assets/sokoban/Crates/crate_15.png");
+      classifyTexture(TileType::DIM_CRATES, "assets/sokoban/Crates/crate_16.png");
 
       // LOCKED HOLE CRATES
-      classifyTexture(TileType::LOCKED_HOLE_CRATES, "./sokoban/Crates/crate_17.png");
-      classifyTexture(TileType::LOCKED_HOLE_CRATES, "./sokoban/Crates/crate_18.png");
-      classifyTexture(TileType::LOCKED_HOLE_CRATES, "./sokoban/Crates/crate_19.png");
-      classifyTexture(TileType::LOCKED_HOLE_CRATES, "./sokoban/Crates/crate_20.png");
-      classifyTexture(TileType::LOCKED_HOLE_CRATES, "./sokoban/Crates/crate_21.png");
+      classifyTexture(TileType::LOCKED_HOLE_CRATES, "assets/sokoban/Crates/crate_17.png");
+      classifyTexture(TileType::LOCKED_HOLE_CRATES, "assets/sokoban/Crates/crate_18.png");
+      classifyTexture(TileType::LOCKED_HOLE_CRATES, "assets/sokoban/Crates/crate_19.png");
+      classifyTexture(TileType::LOCKED_HOLE_CRATES, "assets/sokoban/Crates/crate_20.png");
+      classifyTexture(TileType::LOCKED_HOLE_CRATES, "assets/sokoban/Crates/crate_21.png");
 
       // LOCKED CRATES
-      classifyTexture(TileType::LOCKED_CRATE, "./sokoban/Crates/crate_22.png");
-      classifyTexture(TileType::LOCKED_CRATE, "./sokoban/Crates/crate_23.png");
-      classifyTexture(TileType::LOCKED_CRATE, "./sokoban/Crates/crate_24.png");
-      classifyTexture(TileType::LOCKED_CRATE, "./sokoban/Crates/crate_25.png");
-      classifyTexture(TileType::LOCKED_CRATE, "./sokoban/Crates/crate_26.png");
+      classifyTexture(TileType::LOCKED_CRATE, "assets/sokoban/Crates/crate_22.png");
+      classifyTexture(TileType::LOCKED_CRATE, "assets/sokoban/Crates/crate_23.png");
+      classifyTexture(TileType::LOCKED_CRATE, "assets/sokoban/Crates/crate_24.png");
+      classifyTexture(TileType::LOCKED_CRATE, "assets/sokoban/Crates/crate_25.png");
+      classifyTexture(TileType::LOCKED_CRATE, "assets/sokoban/Crates/crate_26.png");
 
       // FALLING CRATES
-      classifyTexture(TileType::FALLING_CRATES, "./sokoban/Crates/crate_37.png");
-      classifyTexture(TileType::FALLING_CRATES, "./sokoban/Crates/crate_38.png");
-      classifyTexture(TileType::FALLING_CRATES, "./sokoban/Crates/crate_39.png");
-      classifyTexture(TileType::FALLING_CRATES, "./sokoban/Crates/crate_40.png");
-      classifyTexture(TileType::FALLING_CRATES, "./sokoban/Crates/crate_41.png");
+      classifyTexture(TileType::FALLING_CRATES, "assets/sokoban/Crates/crate_37.png");
+      classifyTexture(TileType::FALLING_CRATES, "assets/sokoban/Crates/crate_38.png");
+      classifyTexture(TileType::FALLING_CRATES, "assets/sokoban/Crates/crate_39.png");
+      classifyTexture(TileType::FALLING_CRATES, "assets/sokoban/Crates/crate_40.png");
+      classifyTexture(TileType::FALLING_CRATES, "assets/sokoban/Crates/crate_41.png");
 
       // COINS
-      classifyTexture(TileType::COINS, "./sokoban/Environment/environment_11.png");
-      classifyTexture(TileType::COINS, "./sokoban/Environment/environment_12.png");
+      classifyTexture(TileType::COINS, "assets/sokoban/Environment/environment_11.png");
+      classifyTexture(TileType::COINS, "assets/sokoban/Environment/environment_12.png");
 
       // OUTLINES
-      classifyTexture(TileType::OUTLINES, "./sokoban/Environment/environment_03.png");
-      classifyTexture(TileType::OUTLINES, "./sokoban/Environment/environment_06.png");
-      classifyTexture(TileType::OUTLINES, "./sokoban/Environment/environment_16.png");
+      classifyTexture(TileType::OUTLINES, "assets/sokoban/Environment/environment_03.png");
+      classifyTexture(TileType::OUTLINES, "assets/sokoban/Environment/environment_06.png");
+      classifyTexture(TileType::OUTLINES, "assets/sokoban/Environment/environment_16.png");
 
       // HOLE
-      classifyTexture(TileType::HOLE, "./sokoban/Environment/environment_15.png");
+      classifyTexture(TileType::HOLE, "assets/sokoban/Environment/environment_15.png");
 
       // GROUND OUTLINES
-      classifyTexture(TileType::GROUND_OUTLINES, "./sokoban/Ground/ground_04.png");
-      classifyTexture(TileType::GROUND_OUTLINES, "./sokoban/Ground/ground_02.png");
-      classifyTexture(TileType::GROUND_OUTLINES, "./sokoban/Ground/ground_03.png");
+      classifyTexture(TileType::GROUND_OUTLINES, "assets/sokoban/Ground/ground_04.png");
+      classifyTexture(TileType::GROUND_OUTLINES, "assets/sokoban/Ground/ground_02.png");
+      classifyTexture(TileType::GROUND_OUTLINES, "assets/sokoban/Ground/ground_03.png");
 
       // GROUNDS
-      classifyTexture(TileType::GROUNDS, "./sokoban/Ground/ground_01.png");
-      classifyTexture(TileType::GROUNDS, "./sokoban/Ground/ground_05.png");
-      classifyTexture(TileType::GROUNDS, "./sokoban/Ground/ground_06.png");
+      classifyTexture(TileType::GROUNDS, "assets/sokoban/Ground/ground_01.png");
+      classifyTexture(TileType::GROUNDS, "assets/sokoban/Ground/ground_05.png");
+      classifyTexture(TileType::GROUNDS, "assets/sokoban/Ground/ground_06.png");
     }
 
     Tile createTile(char c, std::shared_ptr<unsigned int> seed) const {
